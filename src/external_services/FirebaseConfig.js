@@ -10,11 +10,6 @@ import {
   sendPasswordResetEmail,
 } from "firebase/auth";
 
-console.log(
-  "********FIREBASE_CONFIG***********",
-  process.env.REACT_APP_FIREBASE_CONFIG
-);
-console.log("********PULKIT***********", process.env.REACT_APP_PULKIT);
 const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
 
 // Initialize Firebase
