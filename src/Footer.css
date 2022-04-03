@@ -1,0 +1,41 @@
+.footer {
+  /*background-color: #232f3e;*/
+  background-color: #5899e2;
+  position: relative;
+  bottom: 0;
+
+  color: #ffffff;
+  overflow: hidden;
+  height: 3.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__container > div {
+  padding: 1.25rem;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.footer__all {
+  padding-top: 1rem;
+  color: white;
+  font-weight: 800;
+  font-size: 0.8125rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}

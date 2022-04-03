@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-detail {
+  font-family: Helvetica, sans-serif;
+  padding: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+.about-para-span {
+  font-weight: 600;
+}
+.about-contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-icons {
+  display: flex;
+}
+.about-image > img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+}
+.about-linkedin {
+  margin-top: 0.1rem;
+  cursor: pointer;
+}
+.about-github {
+  cursor: pointer;
+}
+.about-link {
+  text-decoration: none;
+  color: inherit;
+}
