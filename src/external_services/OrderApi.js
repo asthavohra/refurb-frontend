@@ -3,16 +3,12 @@ import axios from "axios";
 const createOrder = (order) => {
   return new Promise((resolve, reject) => {
     axios
-      .post(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/order`,
-        order,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
-          },
-        }
-      )
+      .post(`${process.env.REACT_APP_API_URL}/api/v1/order`, order, {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+      })
       .then((response) => {
         if (validateCreateOrderResponse(response)) {
           resolve(response.data);
@@ -29,14 +25,11 @@ const createOrder = (order) => {
 const getAllOrders = (userId) => {
   return new Promise((resolve, reject) => {
     axios
-      .get(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/user/${userId}/orders`,
-        {
-          headers: {
-            "X-API-KEY": process.env.API_KEY,
-          },
-        }
-      )
+      .get(`${process.env.REACT_APP_API_URL}/api/v1/user/${userId}/orders`, {
+        headers: {
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+      })
       .then((response) => {
         if (validateGetOrdersResponse(response)) {
           resolve(response.data);

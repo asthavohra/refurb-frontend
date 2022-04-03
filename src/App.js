@@ -18,8 +18,11 @@ import SearchProducts from "./SearchProducts";
 import Signup from "./Signup";
 import { getCurrentUserCartItems } from "./external_services/UsersApi";
 
-const stripe = loadStripe(process.env.STRIPE_PUBLIC_KEY);
-
+const stripe = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+console.log(
+  "stripe public key------>",
+  process.env.REACT_APP_STRIPE_PUBLIC_KEY
+);
 function App() {
   const [{}, dispatch] = useStateValue();
   useEffect(() => {

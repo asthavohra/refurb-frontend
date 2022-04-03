@@ -4,7 +4,7 @@ const createUser = (user) => {
   return new Promise((resolve, reject) => {
     axios
       .post(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/user`,
+        `${process.env.REACT_APP_API_URL}/api/v1/user`,
         {
           uid: user.uid,
           name: user.name,
@@ -14,7 +14,7 @@ const createUser = (user) => {
         {
           headers: {
             "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
+            "X-API-KEY": process.env.REACT_APP_API_KEY,
           },
         }
       )
@@ -33,15 +33,12 @@ const createUser = (user) => {
 const getCurrentUserCartItems = (userId) => {
   return new Promise((resolve, reject) => {
     axios
-      .get(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/user/${userId}/cart`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
-          },
-        }
-      )
+      .get(`${process.env.REACT_APP_API_URL}/api/v1/user/${userId}/cart`, {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+      })
       .then((response) => {
         if (validateCartResponse(response)) {
           resolve(response.data);

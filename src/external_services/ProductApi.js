@@ -3,15 +3,12 @@ import axios from "axios";
 const getProducts = () => {
   return new Promise((resolve, reject) => {
     axios
-      .get(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/products`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
-          },
-        }
-      )
+      .get(`${process.env.REACT_APP_API_URL}/api/v1/products`, {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+      })
       .then((response) => {
         if (validateResponse(response)) {
           resolve(response.data);
@@ -27,11 +24,11 @@ const searchProductsByTitle = (searchTerm) => {
   return new Promise((resolve, reject) => {
     axios
       .get(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/products/search?name=${searchTerm}`,
+        `${process.env.REACT_APP_API_URL}/api/v1/products/search?name=${searchTerm}`,
         {
           headers: {
             "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
+            "X-API-KEY": process.env.REACT_APP_API_KEY,
           },
         }
       )

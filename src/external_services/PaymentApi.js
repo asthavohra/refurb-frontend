@@ -4,14 +4,14 @@ const initiatePayment = (total) => {
   return new Promise((resolve, reject) => {
     axios
       .post(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/payment`,
+        `${process.env.REACT_APP_API_URL}/api/v1/payment`,
         {
           total: total * 100,
         },
         {
           headers: {
             "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
+            "X-API-KEY": process.env.REACT_APP_API_KEY,
           },
         }
       )

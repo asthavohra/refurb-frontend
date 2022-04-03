@@ -3,16 +3,12 @@ import axios from "axios";
 const addItemToCart = (item) => {
   return new Promise((resolve, reject) => {
     axios
-      .post(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/cart/add`,
-        item,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
-          },
-        }
-      )
+      .post(`${process.env.REACT_APP_API_URL}/api/v1/cart/add`, item, {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+      })
       .then((response) => {
         if (validateAddToCartResponse(response)) {
           resolve(response.data);
@@ -29,19 +25,16 @@ const addItemToCart = (item) => {
 const removeItemFromCart = (userId, itemId) => {
   return new Promise((resolve, reject) => {
     axios
-      .delete(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/api/v1/cart/item`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-KEY": process.env.API_KEY,
-          },
-          data: {
-            userId: userId,
-            itemId: itemId,
-          },
-        }
-      )
+      .delete(`${process.env.REACT_APP_API_URL}/api/v1/cart/item`, {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": process.env.REACT_APP_API_KEY,
+        },
+        data: {
+          userId: userId,
+          itemId: itemId,
+        },
+      })
       .then((response) => {
         if (validateRemoveFromCartResponse(response)) {
           resolve(response.data);
