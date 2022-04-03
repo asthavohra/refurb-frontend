@@ -51,3 +51,6 @@
   display: flex;
   justify-content: center;
 }
+.home__spinner > img {
+  width: 50%;
+}

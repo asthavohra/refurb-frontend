@@ -10,9 +10,26 @@
 }
 .about-detail {
   font-family: Helvetica, sans-serif;
-  padding: 2rem;
-  font-size: 0.9rem;
-  line-height: 1.6rem;
+  padding: 1rem;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+}
+
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .about-detail {
+    font-family: Helvetica, sans-serif;
+    padding: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-detail {
+    font-family: Helvetica, sans-serif;
+    padding: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
 }
 .about-para-span {
   font-weight: 600;
@@ -27,8 +44,22 @@
 }
 .about-image > img {
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
+}
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .about-image > img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-image > img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+  }
 }
 .about-linkedin {
   margin-top: 0.1rem;

@@ -129,7 +129,7 @@ function Payment() {
           {/*Payment section-payment method */}
           <div className="payment__section">
             <div className="payment__title">
-              <h3>Payment Method</h3>
+              <h3 className="payment__method">Payment Method</h3>
             </div>
             <div className="payment__details">
               {/* Stripe function here */}
@@ -137,7 +137,9 @@ function Payment() {
                 <CardElement onChange={handleChange} />
                 <div className="payment__priceContainer">
                   <CurrencyFormat
-                    renderText={(value) => <h3>Order Total: {value}</h3>}
+                    renderText={(value) => (
+                      <h3 className="payment__total">Order Total: {value}</h3>
+                    )}
                     decimalScale={2}
                     value={getBasketTotal(basket)}
                     displayType={"text"}
