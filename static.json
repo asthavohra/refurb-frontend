@@ -1,4 +1,5 @@
 {
+  "root": "build/",
   "headers": {
     "/**": {
       "Cache-Control": "no-store, no-cache, max-age=0, private"
