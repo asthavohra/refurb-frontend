@@ -14,6 +14,8 @@ console.log(
   "********FIREBASE_CONFIG***********",
   process.env.REACT_APP_FIREBASE_CONFIG
 );
+console.log("********PULKIT***********", process.env.REACT_APP_PULKIT);
+console.log("********PULKIT***********", process.env.PULKIT);
 const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
 
 // Initialize Firebase
