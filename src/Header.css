@@ -1,23 +1,55 @@
+.header__wrapper {
+  background-color: #131619;
+}
 .header {
-  height: 3.75rem;
+  /* height: 3.75rem;*/
+  height: 3.2rem;
   display: flex;
   align-items: center;
   /*background-color: #131921;*/
-  background-color: #5899e2;
+  /* background-color: #5899e2;*/
+  background-color: #131619;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .header {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    /*background-color: #131921;*/
+    /* background-color: #5899e2;*/
+    background-color: #131619;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /*background-color: #131921;*/
+    /* background-color: #5899e2;*/
+    background-color: #131619;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
 .header__logo {
   object-fit: contain;
-  width: 3.78rem;
+  /*width: 3.78rem;*/
+  width: 5rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .header__logo {
-    width: 6.25rem;
+    width: 10rem;
     object-fit: contain;
     margin: 0 1.25rem;
     margin-top: 1.125rem;
@@ -25,7 +57,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .header__logo {
-    width: 6.25rem;
+    width: 12rem;
     object-fit: contain;
     margin: 0 1.25rem;
     margin-top: 1.125rem;
@@ -36,21 +68,63 @@
   flex: 1;
   align-items: center;
   border-radius: 1.5rem;
+  justify-content: center;
 }
 .header__searchInput {
   /*height: 0.75rem;*/
   height: 1.375rem;
   padding: 0.625rem;
   border: none;
-  width: 100%;
+  width: 70%;
 }
-
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .header__searchInput {
+    /*height: 0.75rem;*/
+    height: 2rem;
+    padding: 0.625rem;
+    border: none;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__searchInput {
+    /*height: 0.75rem;*/
+    height: 2.5rem;
+    padding: 0.625rem;
+    border: none;
+    width: 70%;
+  }
+}
 .header__searchIcon {
   padding: 0.3125rem;
   height: 1.375rem !important;
   /*background-color: #cd9402;*/
-  background-color: #afee39;
+  /*background-color: #afee39;*/
+  background-color: #c3c3f5;
   cursor: pointer;
+}
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .header__searchIcon {
+    padding: 0.3125rem;
+
+    height: 2rem !important;
+    width: 2.5rem !important;
+    /*background-color: #cd9402;*/
+    /*background-color: #afee39;*/
+    background-color: #c3c3f5;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__searchIcon {
+    padding: 0.3125rem;
+    height: 2.5rem !important;
+    width: 3rem !important;
+    /*background-color: #cd9402;*/
+    /*background-color: #afee39;*/
+    background-color: #c3c3f5;
+    cursor: pointer;
+  }
 }
 .header__optionLineOne {
   font-size: 0.625rem;

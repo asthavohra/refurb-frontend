@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import heroimage from "./assets/newhero.jpg";
+import heroimage from "./assets/hero0.jpg";
 import Product from "./Product";
 import spinner from "./assets/spinner_1.gif";
 import { getProducts } from "./external_services/ProductApi";
@@ -49,6 +49,7 @@ class Home extends React.Component {
               src={heroimage}
               alt="hero image showing new mobiles affecting earth"
             />
+
             <div className="home__spinner">
               <img src={spinner}></img>
             </div>
@@ -59,11 +60,17 @@ class Home extends React.Component {
     return (
       <div className="home">
         <div className="home__container">
-          <img
-            className="home__image"
-            src={heroimage}
-            alt="hero image showing new mobiles affecting earth"
-          />
+          <div className="home__imageopacity">
+            <img
+              className="home__image"
+              src={heroimage}
+              alt="hero image showing new mobiles affecting earth"
+            />
+            <div className="home__text">
+              Hello there! We're reFurb, our mission is to make restored devices
+              mainstream. Making old the 'new new' so to speak.
+            </div>
+          </div>
 
           {this.state.productsInChunk &&
             this.state.productsInChunk.map((product) => {

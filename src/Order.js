@@ -6,11 +6,19 @@ import CheckoutProduct from "./CheckoutProduct";
 function Order({ order }) {
   return (
     <div className="order">
-      <h2>Order</h2>
-      <p>{order.data.createdAt}</p>
-      <p className="order__id">
-        <small>{order.id}</small>
-      </p>
+      <div className="order__details">
+        <h2>Order</h2>
+        <div className="order__creation">
+          <div className="order__creation-date">
+            <p>{order.data.createdAt}</p>
+          </div>
+          <div className="order__creationid">
+            <p className="order__id">
+              <small>{order.id}</small>
+            </p>
+          </div>
+        </div>
+      </div>
       {order.data.basket?.map((item) => (
         <CheckoutProduct
           id={item.id}

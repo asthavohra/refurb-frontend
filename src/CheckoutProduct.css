@@ -1,17 +1,32 @@
 .checkoutProduct {
   display: flex;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  padding-top: 1rem;
 }
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .checkoutProduct {
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .checkoutProduct {
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
 .checkoutProduct__info {
   padding-left: 1.25rem;
 }
 .checkoutProduct__info > button {
   /*background-color: #f0c14b;*/
-  background-color: #afee39;
+  /*background-color: #afee39;*/
+  background-color: #c3c3f5;
   border: 1px solid;
   margin-top: 0.625rem;
-  border-color: #a88734 #9c7e31 #846a29;
+  /*border-color: #a88734 #9c7e31 #846a29;*/
   color: #111;
   cursor: pointer;
   border-radius: 0.3125rem;
@@ -25,23 +40,37 @@
 }
 .checkoutProduct__image {
   object-fit: contain;
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .checkoutProduct__image {
+    object-fit: contain;
+    width: 11.25rem;
+    height: 11.25rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .checkoutProduct__image {
+    object-fit: contain;
+    width: 11.25rem;
+    height: 11.25rem;
+  }
 }
 .checkoutProduct__price {
   font-size: 0.8rem;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
 }
 
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .checkoutProduct__price {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-top: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .checkoutProduct__price {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-top: 0.875rem;
   }
 }
@@ -61,7 +90,11 @@
 }
 
 .checkoutProduct__title {
-  font-size: 0.8rem;
+  font-size: 0.625rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .checkoutProduct__title {
