@@ -112,6 +112,29 @@
   display: flex;
   justify-content: center;
 }
-.home__spinner > img {
+.home__desktopspinner {
+  display: none;
+}
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .home__desktopspinner {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  home__desktopspinner {
+    width: 50%;
+  }
+}
+.home__mobilespinner {
   width: 50%;
+}
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .home__mobilespinner {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home__mobilespinner {
+    display: none;
+  }
 }

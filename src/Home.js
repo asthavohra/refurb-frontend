@@ -4,7 +4,6 @@ import heroimage from "./assets/hero0.jpg";
 import Product from "./Product";
 import spinner from "./assets/spinner_1.gif";
 import mobilespinner from "./assets/mobilespinner.gif";
-
 import { getProducts } from "./external_services/ProductApi";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -53,7 +52,8 @@ class Home extends React.Component {
             />
 
             <div className="home__spinner">
-              <img src={spinner}></img>
+              <img src={spinner} className="home__desktopspinner"></img>
+              <img src={mobilespinner} className="home__mobilespinner"></img>
             </div>
           </div>
         </div>

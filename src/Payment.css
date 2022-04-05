@@ -48,6 +48,7 @@
 }
 .payment__method {
   font-size: medium;
+  padding-bottom: 0.25rem;
 }
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .payment__method {
@@ -63,16 +64,20 @@
 }
 .payment__total {
   font-size: medium;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .payment__total {
     font-size: medium;
+    padding-bottom: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .payment__total {
     font-size: medium;
+    padding-bottom: 0.5rem;
     padding-bottom: 0.5rem;
   }
 }
