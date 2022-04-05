@@ -89,7 +89,7 @@
 @media only screen and (min-width: 1200px) {
   .header__searchInput {
     /*height: 0.75rem;*/
-    height: 2.5rem;
+    height: 2rem;
     padding: 0.625rem;
     border: none;
     width: 70%;
@@ -102,6 +102,9 @@
   /*background-color: #afee39;*/
   background-color: #c3c3f5;
   cursor: pointer;
+}
+.header__searchIcon:hover {
+  background-color: #9090f4;
 }
 @media only screen and (min-width: 775px) and (max-width: 1200px) {
   .header__searchIcon {
@@ -118,8 +121,8 @@
 @media only screen and (min-width: 1200px) {
   .header__searchIcon {
     padding: 0.3125rem;
-    height: 2.5rem !important;
-    width: 3rem !important;
+    height: 2rem !important;
+    width: 2.5rem !important;
     /*background-color: #cd9402;*/
     /*background-color: #afee39;*/
     background-color: #c3c3f5;

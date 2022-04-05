@@ -35,15 +35,39 @@
   /*height: 1.875rem;*/
   border: 1px solid;
   margin-top: 0.625rem;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  /* border-color: #a88734 #9c7e31 #846a29;*/
+  /*color: #111;*/
   cursor: pointer;
   border-radius: 0.3125rem;
   padding: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 50%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .subtotal > button {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .subtotal > button {
+    padding: 1rem;
+  }
 }
 .subtotal > button:active {
   transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   /* Lowering the shadow */
+}
+.subtotal > button:hover {
+  /* box-shadow: rgba(217, 216, 221, 0.4) 0 4px 8px,
+    rgba(184, 171, 214, 0.3) 0 7px 13px -3px, #c3c3f5 0 -3px 0 inset;*/
+  background-color: #9090f4;
+  transform: translateY(-2px);
 }

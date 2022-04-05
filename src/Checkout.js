@@ -17,10 +17,10 @@ function Checkout() {
         <div>
           <h4 className="checkout__user">Hello {user?.email ?? "Guest"} </h4>
           <h2 className="checkout__title">Your Shopping Basket</h2>
-          {user && basket.length === 0 && (
+          {user && basket.length === 0 && !user && (
             <img src={spinner} className="checkout__spinner"></img>
           )}
-          {user && basket.length === 0 && (
+          {user && basket.length === 0 && !user && (
             <img src={mobilespinner} className="checkout__mobilespinner"></img>
           )}
           {basket.length > 0 &&

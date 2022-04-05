@@ -3,6 +3,8 @@ import "./Home.css";
 import heroimage from "./assets/hero0.jpg";
 import Product from "./Product";
 import spinner from "./assets/spinner_1.gif";
+import mobilespinner from "./assets/mobilespinner.gif";
+
 import { getProducts } from "./external_services/ProductApi";
 import Header from "./Header";
 import Footer from "./Footer";

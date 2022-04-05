@@ -122,12 +122,32 @@
   background-color: #c3c3f5;
   border-radius: 0.125rem;
   width: 100%;
-  height: 1.875rem;
+  /* height: 1.875rem;*/
   border: 1px solid;
   margin-top: 0.625rem;
   /*border-color: #a88734 #9c7e31 #846a29;*/
   cursor: pointer;
   border-radius: 0.3125rem;
+
+  border: none;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 50%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  padding: 0.78rem;
+}
+
+@media only screen and (min-width: 775px) and (max-width: 1200px) {
+  .login__signInButton {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .login__signInButton {
+    padding: 1rem;
+  }
 }
 .login__registerButton {
   border-radius: 0.125rem;
@@ -157,6 +177,14 @@
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
+.login__signInButton:hover {
+  /*box-shadow: rgba(217, 216, 221, 0.4) 0 4px 8px,
+    rgba(184, 171, 214, 0.3) 0 7px 13px -3px, #c3c3f5 0 -3px 0 inset;
+    */
+  background-color: #9090f4;
+  transform: translateY(-2px);
+}
+
 .login__registerWithGoogleButton > span > svg {
   margin-right: 0.5rem;
   cursor: pointer;
