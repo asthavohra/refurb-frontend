@@ -3,7 +3,6 @@ import "./About.css";
 import aboutImage from "./assets/aboutImage.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 function About() {
@@ -12,7 +11,7 @@ function About() {
       <div className="about">
         <div className="about-me">
           <div className="about-image">
-            <img src={aboutImage}></img>
+            <img src={aboutImage} alt="my display"></img>
           </div>
           <div className="about-detail">
             <p className="about-para">

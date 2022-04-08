@@ -86,6 +86,7 @@ class Home extends React.Component {
                     image={product[0].image}
                     key={product[0].id}
                   />
+
                   {product[1] != null ? (
                     <Product
                       id={product[1]?.id}

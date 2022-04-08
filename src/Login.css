@@ -167,13 +167,15 @@
   border-radius: 0.3125rem;
 }
 .login__container > button:active {
-  transform: scale(0.98);
+  /*transform: scale(0.98);*/
+  transform: translateY(-2px);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   /* Lowering the shadow */
 }
 .login__signInButton:active {
-  transform: scale(0.98);
+  /*transform: scale(0.98);*/
+  transform: translateY(-2px);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
@@ -182,7 +184,7 @@
     rgba(184, 171, 214, 0.3) 0 7px 13px -3px, #c3c3f5 0 -3px 0 inset;
     */
   background-color: #9090f4;
-  transform: translateY(-2px);
+  /*transform: translateY(-2px);*/
 }
 
 .login__registerWithGoogleButton > span > svg {
