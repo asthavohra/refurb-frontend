@@ -38,7 +38,7 @@
    $Env:REACT_APP_FIREBASE_CONFIG='{"apiKey":"xxxxxxx","authDomain":"refurb-f5219.firebaseapp.com","projectId":"refurb-f5219","storageBucket":"refurb-f5219.appspot.com","messagingSenderId":"11111111111","appId":"1:11111111:web:7aeb850c411227264ade27","measurementId":"G-9T2KQVCJKN"}'
    ```
 
-   ####
+   ### Linux/Unix/Macos
 
    ```
    REACT_APP_FIREBASE_CONFIG='{"apiKey":"xxxxxxx","authDomain":"refurb-f5219.firebaseapp.com","projectId":"refurb-f5219","storageBucket":"refurb-f5219.appspot.com","messagingSenderId":"11111111111","appId":"1:11111111:web:7aeb850c411227264ade27","measurementId":"G-9T2KQVCJKN"}'
@@ -53,7 +53,7 @@
    $Env:REACT_APP_API_URL='http://<backend_host>:<port>'
    ```
 
-   ####
+   ### Linux/Unix/Macos
 
    ```
    REACT_APP_STRIPE_PUBLIC_KEY='pk_test_51KiJnwL9LLEQmnBTpVAHuu05zwxSzUapKQHa5TRf9LygTqkT38DVVIM2F2ViqUFKIBDDQBAo2Hm0ry3399gVGwHb006yaAFJLl'
